@@ -1,3 +1,10 @@
+# METADATA
+# title: Mock setting is enabled
+# description: Mock policy for developing CCF release automation. Raises a violation when settings.mock_setting_enabled is false.
+# custom:
+#   controls:
+#     - mock-ctrl-1
+#   schedule: "0 * * * *"
 package compliance_framework.mock_setting_enabled
 
 risk_templates := [{
@@ -15,7 +22,7 @@ risk_templates := [{
 }]
 
 violation contains {"id": "mock_setting_disabled"} if {
-	input.settings.mock_setting_enabled == false
+	object.get(input, ["settings", "mock_setting_enabled"], true) == false
 }
 
 title := "Mock setting is enabled"

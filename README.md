@@ -6,6 +6,12 @@ It has the same shape as a real `plugin-*-policies` repo (for example
 `plugin-github-settings-policies`): Rego policies under `policies/`, each with a
 `_test.rego` file, bundled with `opa build`.
 
+## Policies
+
+| Policy | Violation id | Fires when |
+| --- | --- | --- |
+| `mock_setting_enabled` | `mock_setting_disabled` | `settings.mock_setting_enabled` is `false` (absent counts as enabled) |
+
 ## Make targets
 
 ```shell

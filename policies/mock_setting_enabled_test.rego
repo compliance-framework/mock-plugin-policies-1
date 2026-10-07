@@ -11,3 +11,7 @@ test_violation_when_disabled if {
 test_no_violation_when_setting_absent if {
 	count(violation) == 0 with input as {"settings": {}}
 }
+
+test_no_violation_when_settings_object_absent if {
+	count(violation) == 0 with input as {}
+}
