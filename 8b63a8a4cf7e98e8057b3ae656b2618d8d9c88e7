@@ -1,0 +1,2 @@
+lisa-addressed:
+- CORE-DOC-001 (6e97ec1af84d): added a Releases section to README.md covering release-please, release.yml (ghcr tags), the preview label and release-checks.
