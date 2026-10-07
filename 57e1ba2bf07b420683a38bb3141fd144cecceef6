@@ -1,0 +1,7 @@
+lisa-design:
+- Every shared workflow ref and notify's workflows-ref pinned to the full SHA 084cc5d5ee6a40455f84b4f3108cfb254654ae28 (head of workflows#12), never a tag, so a later re-pin is one search/replace.
+- release-please-config.json copies every key of workflows' release-please/defaults.json verbatim (release-please can't extend remotely; the shared workflow warns on drift) and adds only packages {".": simple}.
+- Seeded at 0.0.0 with version.txt (the simple release type's version file) so the first feat merge proposes v0.1.0 (bump-minor-pre-major).
+- ci.yml pull_request types widened to [opened, edited, synchronize, reopened, labeled, unlabeled]: README says edited re-checks PR titles and labeled/unlabeled re-run release-checks after release:major-approved.
+- preview.yml uses README triggers (opened/synchronize/reopened/labeled + push main) with on-main false: publishing happens only for PRs labelled preview.
+- release.yml grants contents: read (not write) + packages: write, per README for release-policies.yml.
