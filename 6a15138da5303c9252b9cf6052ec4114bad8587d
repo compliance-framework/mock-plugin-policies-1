@@ -1,0 +1,4 @@
+lisa-addressed:
+- [must-fix] REGO-META-001: added package-scoped METADATA (title, description, custom.controls [mock-ctrl-1], custom.schedule) to policies/mock_setting_enabled.rego
+- [must-fix] REGO-INPUT-001: violation uses object.get(input, ["settings","mock_setting_enabled"], true) == false; absent setting/settings counts as enabled; added test for missing settings object
+- [should-fix] REGO-README-001: README lists the policy, its violation id and when it fires
