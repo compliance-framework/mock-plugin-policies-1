@@ -3,3 +3,9 @@ lisa-design:
 - Rego is written in v1 syntax and kept opa fmt clean (tabs), unlike the reference repo which is not fmt clean; -1 must pass opa fmt --fail and opa check --strict.
 - Makefile fixes the reference's `@OPA test` typo and adds validate (opa check --strict) and fmt (opa fmt --fail -l) targets beside the spec's test/build.
 - No example-data/ and no GitHub workflows: workflows come from the shared ci-policies.yml adoption (S1), per the task.
+
+lisa-selfreview:
+pass 1 (strict): request_changes
+- [must-fix] REGO-META-001 policies/mock_setting_enabled.rego: no METADATA block (title, description, custom.controls, custom.schedule)
+- [must-fix] REGO-INPUT-001 policies/mock_setting_enabled.rego:18: bare access to optional input.settings.mock_setting_enabled; use object.get with default
+- [should-fix] REGO-README-001 README.md: policy not listed in README
