@@ -5,3 +5,6 @@ lisa-design:
 - ci.yml pull_request types widened to [opened, edited, synchronize, reopened, labeled, unlabeled]: README says edited re-checks PR titles and labeled/unlabeled re-run release-checks after release:major-approved.
 - preview.yml uses README triggers (opened/synchronize/reopened/labeled + push main) with on-main false: publishing happens only for PRs labelled preview.
 - release.yml grants contents: read (not write) + packages: write, per README for release-policies.yml.
+
+lisa-selfreview:
+pass 1: CORE-DOC-001 [should-fix] README.md: README does not describe the new release/preview workflows (fingerprint 6e97ec1af84d).
