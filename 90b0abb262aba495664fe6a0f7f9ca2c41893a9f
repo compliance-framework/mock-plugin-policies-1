@@ -1,0 +1,5 @@
+lisa-design:
+- Tests live in the same package as the policy (compliance_framework.mock_setting_enabled), as in plugin-github-settings-policies, not a separate *_test package: opa build bundles test files, and a separate package under compliance_framework could be evaluated by the agent as a policy.
+- Rego is written in v1 syntax and kept opa fmt clean (tabs), unlike the reference repo which is not fmt clean; -1 must pass opa fmt --fail and opa check --strict.
+- Makefile fixes the reference's `@OPA test` typo and adds validate (opa check --strict) and fmt (opa fmt --fail -l) targets beside the spec's test/build.
+- No example-data/ and no GitHub workflows: workflows come from the shared ci-policies.yml adoption (S1), per the task.
