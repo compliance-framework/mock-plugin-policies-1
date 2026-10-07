@@ -1,0 +1,5 @@
+lisa-design:
+- Pinned both reusable workflows and notify's workflows-ref to the full SHA a94553bdc479fac47fbea7febbf57dcb615dbc87 (head of workflows#5), not @v1: this is a trial of the unreleased shared CI. Swap to @v1 once released.
+- Top-level permissions: {} with per-job grants exactly as the workflows README documents (ci: actions/contents/pull-requests read + security-events write for nested osv-scanner; notify: actions/contents read).
+- ci-policies inputs left at defaults (directory policies, opa 1.14.1, regal 0.43.0); no repo .regal config, so the shared base config is used.
+- pull_request uses default activity types per the task spec (README suggests adding `edited` to re-check edited titles; deliberately out of scope for this trial).
