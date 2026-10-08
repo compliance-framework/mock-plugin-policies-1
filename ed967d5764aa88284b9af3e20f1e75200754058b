@@ -1,0 +1,4 @@
+lisa-design:
+- Only ci.yml's pull_request types gain `closed`; pins and other files untouched (spec W1-S3-MOCK-CLOSED).
+- Run on closed PRs is near-empty: ci-policies skips every job on closed PRs, release-checks gates on state != 'closed'; only notify-failure (v1.3.0) acts, flipping the needs-human card to Handled and closing the CI incident.
+- `ci:` commit type keeps release-please from cutting a release.
