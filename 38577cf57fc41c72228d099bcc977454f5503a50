@@ -1,0 +1,2 @@
+lisa-addressed:
+- CORE-DOC-001 (fp 6e97ec1af84d): README Releases section now lists cut-prerelease.yml (manual dispatch; version from the single open release-please PR).
