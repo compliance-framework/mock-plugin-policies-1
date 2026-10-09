@@ -1,3 +1,6 @@
 lisa-design:
 - The cut-prerelease caller is a byte-for-byte copy of mock-api's, pinned to workflows v1.3.0 (ec58cea); don't re-pin here.
 - The rc-test change is metadata only (the METADATA description), so tests stay untouched and policy behaviour is unchanged; "explicitly false" matches the rule, which ignores an absent setting.
+
+lisa-selfreview:
+pass 1: CORE-DOC-001 [should-fix] README.md Releases section lists every workflow but not the new cut-prerelease.yml (fp 6e97ec1af84d) -> fix
