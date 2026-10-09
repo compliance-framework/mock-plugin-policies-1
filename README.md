@@ -41,5 +41,7 @@ in `.github/workflows/`):
   release; a `-rcN` tag publishes only itself).
 - `preview.yml`: label a PR `preview` to publish `:pr-<number>`. Pushes to `main` publish
   nothing (`on-main: false`).
+- `cut-prerelease.yml`: run by hand (`workflow_dispatch`) to cut a `vX.Y.Z-rcN` prerelease. It
+  reads `X.Y.Z` from the open release-please PR and fails unless exactly one is open.
 - `ci.yml` also runs `release-checks`, which only acts on release-please PRs. A major version
   bump needs the `release:major-approved` label.
