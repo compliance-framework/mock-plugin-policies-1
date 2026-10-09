@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/compliance-framework/mock-plugin-policies-1/compare/v0.1.0...v0.1.1) (2026-10-09)
+
+
+### Bug Fixes
+
+* say the mock policy fires only when the setting is explicitly false ([#16](https://github.com/compliance-framework/mock-plugin-policies-1/issues/16)) ([f9d02db](https://github.com/compliance-framework/mock-plugin-policies-1/commit/f9d02db25ed8b476a20ed7d228214a7fc06c621d))
+
 ## 0.1.0 (2026-10-07)
 
 
