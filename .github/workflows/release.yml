@@ -9,7 +9,7 @@ permissions:
 
 jobs:
   release:
-    uses: compliance-framework/workflows/.github/workflows/release-policies.yml@ec58cea2c02f12b5dad6b23a7bfdc84360f59f11 # v1.3.0
+    uses: compliance-framework/workflows/.github/workflows/release-policies.yml@21aaac7c174aaf90abafecf1c90c30b238367d3d # v1.3.1
     with:
       opa-version: "1.14.1"
       directory: policies
