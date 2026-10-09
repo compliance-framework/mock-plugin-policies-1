@@ -1,6 +1,6 @@
 # METADATA
 # title: Mock setting is enabled
-# description: Mock policy for developing CCF release automation. Raises a violation when settings.mock_setting_enabled is false.
+# description: Mock policy for developing CCF release automation. Raises a violation when settings.mock_setting_enabled is explicitly false.
 # custom:
 #   controls:
 #     - mock-ctrl-1
